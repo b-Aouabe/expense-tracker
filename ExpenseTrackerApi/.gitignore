@@ -1,0 +1,58 @@
+# .NET related files
+/bin/
+/obj/
+/out/
+
+# User-specific files
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET temporary files
+app_data/
+App_Data/
+wwwroot/
+
+# NuGet package files
+/packages/
+*.nupkg
+*.nuspec
+
+# Logs
+*.log
+
+# ASP.NET Core environment variables
+appsettings.Development.json
+appsettings.Production.json
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+
+# Docker and container related
+.docker/
+docker-compose.override.yml
+
+# Azure Functions related
+local.settings.json
+
+# VS Code settings
+.vscode/
+
+# Rider IDE files
+.idea/
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# NPM packages (if using node.js for any part)
+node_modules/
+
+# JetBrains Rider settings (if using)
+.idea/

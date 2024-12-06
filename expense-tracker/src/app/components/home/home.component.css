@@ -1,0 +1,14 @@
+.card {
+    border-radius: 12px;
+    border: none;
+  }
+  ul.list-group li {
+    font-size: 1.2rem;
+  }
+  .btn {
+    transition: transform 0.2s ease-in-out;
+  }
+  .btn:hover {
+    transform: scale(1.05);
+  }
+  

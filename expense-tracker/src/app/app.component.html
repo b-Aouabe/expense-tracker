@@ -1,0 +1,27 @@
+<header class="header p-3 container center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2">
+    <a class="navbar-brand" routerLink="/">Expense Tracker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <button *ngFor="let action of actions"
+            (click)="setCurrentAction(action)"
+            routerLink="{{action.route}}"
+            [class]="action === currentAction || router.url.includes(action.route)
+                  ? 'nav-link active text-white' 
+                  : 'nav-link text-secondary'"
+          >
+          {{action.title}} <i class="bi bi-{{action.icon}}" ></i>
+      </button>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="p-3 container">
+  <router-outlet></router-outlet>
+</main>
+
+
+

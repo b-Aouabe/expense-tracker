@@ -1,0 +1,22 @@
+<div class="container text-center py-5">
+    <h1 class="display-4 text-dark mb-3">{{ title }}</h1>
+    <p class="lead text-secondary mb-4">{{ description }}</p>
+
+    <p class="fs-5">This Expense Tracker allows you to:</p>
+    <ul class="list-group list-group-flush text-start mx-auto" style="max-width: 400px;">
+      <li class="list-group-item">
+        <i class="bi bi-check-circle-fill text-success me-2"></i> Add and categorize expenses
+      </li>
+      <li class="list-group-item">
+        <i class="bi bi-check-circle-fill text-success me-2"></i> Set a monthly budget
+      </li>
+      <li class="list-group-item">
+        <i class="bi bi-check-circle-fill text-success me-2"></i> Get notified when exceeding the budget
+      </li>
+    </ul>
+
+    <div class="mt-4">
+      <button class="btn btn-primary btn-lg me-2" (click)="navigateTo('add-expense')">Get Started</button>
+      <button class="btn btn-dark btn-lg" (click)="navigateTo('about')">Learn More</button>
+    </div>
+</div>
